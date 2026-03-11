@@ -1,0 +1,37 @@
+9
+001-0000-00-01-1
+La Iliada
+Homero
+14
+978-3-16-148410-0
+Cien anios de Soledad
+Gabriel Garcia Marquez
+10
+978-0-7432-7356-5
+El principito
+Antoine de Saint-Exupery
+5
+978-84-376-0494-7
+Don Quijote de la Mancha
+Miguel de Cervantes
+5
+978-0-452-28423-4
+1984
+George Orwell
+7
+978-0-14-143951-8
+Orgullo y prejuicio
+Jane Austen
+4
+978-0-547-92822-3
+El hobbit
+J.R.R. Tolkien
+10
+978-0-154-14785-0
+La Metamorfosis
+Franz Kafka
+10
+985-65412-5-14-5
+Crimen y Castigo 
+Fiodor Dostoyevski
+15

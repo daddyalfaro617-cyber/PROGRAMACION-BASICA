@@ -1,0 +1,112 @@
+@startuml
+' Clases
+
+class Libro {
+  - isbn: string
+  - titulo: string
+  - autor: string
+  - cantidad: int
+  + Libro()
+  + Libro(i: string, t: string, a: string, c: int)
+  + getIsbn(): string
+  + getTitulo(): string
+  + getAutor(): string
+  + getCantidad(): int
+  + setCantidad(c: int): void
+  + mostrar(): void
+}
+
+abstract class Usuario {
+  # id: string
+  # nombre: string
+  # contrasenia: string
+  + Usuario()
+  + Usuario(i: string, n: string, c: string)
+  + {virtual} ~Usuario()
+  + getId(): string
+  + getNombre(): string
+  + getContrasenia(): string
+  + {virtual} esAdmin(): bool
+  + {virtual} getTipo(): string
+  + {virtual} getExtra(): string
+}
+
+class Alumno {
+  - carrera: string
+  + Alumno(i: string, n: string, c: string, ca: string)
+  + esAdmin(): bool
+  + getTipo(): string
+  + getExtra(): string
+}
+
+class Administrador {
+  - rol: string
+  + Administrador(i: string, n: string, c: string, r: string)
+  + esAdmin(): bool
+  + getTipo(): string
+  + getExtra(): string
+}
+
+class Prestamo {
+  - idUsuario: string
+  - isbn: string
+  - cantidad: int
+  + Prestamo()
+  + Prestamo(idU: string, i: string, c: int)
+  + getIdUsuario(): string
+  + getIsbn(): string
+  + getCantidad(): int
+  + setCantidad(c: int): void
+}
+
+class Biblioteca {
+  - libros: vector<Libro>
+  - usuarios: vector<shared_ptr<Usuario>>
+  - prestamos: vector<Prestamo>
+  - usuarioActual: int
+  + Biblioteca()
+  + ~Biblioteca()
+  - buscarLibroPorIsbn(isbn: string): int
+  - buscarUsuarioPorId(id: string): int
+  - buscarPrestamo(idUsuario: string, isbn: string): int
+  - contarPrestamosUsuario(idUsuario: string): int
+  - limpiarPantalla(): void
+  - pausa(): void
+  + guardarDatos(): void
+  + cargarDatos(): void
+  + menuPrincipal(): void
+  + menuAlumno(): void
+  + menuAdmin(): void
+  + mostrarCatalogo(): void
+  + buscarLibro(): void
+  + registrarUsuario(): void
+  + iniciarSesion(): void
+  + cerrarSesion(): void
+  + agregarLibro(): void
+  + prestarLibro(): void
+  + devolverLibro(): void
+  + ejecutar(): void
+}
+
+' Herencia
+Usuario <|-- Alumno
+Usuario <|-- Administrador
+
+' Relaciones de composición/agregación (Biblioteca contiene colecciones)
+Biblioteca *-- "libros" Libro : contiene >
+Biblioteca *-- "usuarios" Usuario : contiene >
+Biblioteca *-- "prestamos" Prestamo : contiene >
+
+' Asociación entre Prestamo y Usuario (débil, a través de id)
+Prestamo --> "idUsuario" Usuario : referencia por id
+
+' Asociación entre Prestamo y Libro (débil, a través de isbn)
+Prestamo --> "isbn" Libro : referencia por isbn
+
+' Dependencias de Biblioteca con clases concretas (para crear objetos)
+Biblioteca ..> Alumno : <<create>>
+Biblioteca ..> Administrador : <<create>>
+Biblioteca ..> Libro : <<create>>
+Biblioteca ..> Prestamo : <<create>>
+
+@enduml

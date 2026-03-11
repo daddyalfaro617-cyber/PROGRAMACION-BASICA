@@ -1,0 +1,8 @@
+Para ejecutar el programa, sigue la siguiente secuencia de pasos:
+1. Para abrir el terminal presiona Ctrl + Ñ.
+2. Ingresa el siguiente contenido: g++ Main.cpp Biblioteca.cpp Libro.cpp Usuario.cpp
+   Prestamo.cpp Historial.cpp Utilidades.cpp Menu.cpp -o readbook.
+3. En la misma interfaz ingresa: ./readbook
+
+Para ejecutar y poder ver el diagrama del PlantUML:
+1. Presiona Ctrl + P.
