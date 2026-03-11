@@ -1,4 +1,0 @@
-60508321,La Iliada,Homero,10
-22314567,La Odisea,Homero,12
-54789641,Mil anios de soledad,Gabriel Garcia Marquez,11
-78955645,La Metamorfosis,Franz Kafka,10

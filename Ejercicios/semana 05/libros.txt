@@ -1,0 +1,13 @@
+3
+000
+La iliada
+Homero
+11
+0001
+La Odisea
+Homero
+15
+0002
+Hamblet
+William S.
+10

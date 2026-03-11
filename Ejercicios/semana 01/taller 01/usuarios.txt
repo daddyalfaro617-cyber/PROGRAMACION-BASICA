@@ -1,0 +1,2 @@
+ADMIN,Administrador,admin,admin,0,0
+U101,dady withman,normal,Dady@2025,0,0

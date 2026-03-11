@@ -1,0 +1,3 @@
+001,Cien años de soledad,Gabriel García Márquez,3,1
+002,El principito,Antoine de Saint-Exupéry,2,1
+003,Don Quijote,Miguel de Cervantes,1,1

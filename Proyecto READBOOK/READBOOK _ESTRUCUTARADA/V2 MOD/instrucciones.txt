@@ -1,0 +1,3 @@
+1. Abrir el terminal ctrl + Ñ
+2. Pegar lo siguiente: g++ Main.cpp Globales.cpp Utilidades.cpp Archivos.cpp Funciones.cpp -o readbook
+3. .\readbook.exe

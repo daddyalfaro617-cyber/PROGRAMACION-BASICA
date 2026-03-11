@@ -1,4 +1,0 @@
-U1,admin,admin123,admin,super
-0020250435,Dady Withman,Dady123,alumno,Ingeniera en Informatica y Sistemas
-0020250436,Eloy Nazario,123,alumno,Zootecnia
-0020250326,Anderson Vazques,alumno,andy123,Ingenieria Civil
